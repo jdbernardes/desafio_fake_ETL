@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "desafio-fake-etl"
+version = "0.1.0"
+description = ""
+authors = ["Júlio Bernardes <juliocd.bernardes@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ignr = "^2.2"
+pre-commit = "^3.7.1"
+black = "^24.4.2"
+isort = "^5.13.2"
+flake8 = "^7.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
