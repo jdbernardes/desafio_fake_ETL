@@ -16,7 +16,9 @@ class Aggregate:
 
 
 if __name__ == "__main__":
-    from desafio_fake_etl.extract.extract_data import ExtractData
+    # to run this test, do the following:
+    # poetry run python -m desafio_fake_etl.transform.aggregate
+    from ..extract.extract_data import ExtractData
 
     folder = "Data"
     edata = ExtractData(folder)
