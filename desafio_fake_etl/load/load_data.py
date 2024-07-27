@@ -1,24 +1,22 @@
 from typing import List
 
 import pandas as pd
-from loguru import logger
+
+from utils.utils_log import log_decorator
 
 
 class LoadData:
 
     def __init__(self) -> None:
-        logger.add("./logs/fake_etl_load_data.log")
-        logger.info("Starting loader logging collector")
+        pass
 
+    @log_decorator
     def load_data(self, file_format: List[str], df: pd.DataFrame) -> None:
-        logger.info(file_format)
-        logger.info(df)
         for format in file_format:
             if format == "csv":
                 df.to_csv("./Data/data.csv")
             if format == "parquet":
                 df.to_parquet("./Data/data.parquet")
-        logger.info("File successfuly created")
 
 
 if __name__ == "__main__":
