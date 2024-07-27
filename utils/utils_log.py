@@ -3,7 +3,7 @@ from functools import wraps
 from loguru import logger
 
 logger.remove()
-log = "./logs/etl.log"
+log = "./logs/fake_etl.log"
 logger.add(log, format="{time} {level} {message} {file}", level="INFO")
 
 
